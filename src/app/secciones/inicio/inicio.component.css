@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+.pcarrusel{
+    color: #fff;
+}
+.imgcarrusel{
+    width: 100px;
+    height: 600px;
+    max-width: 100%; /* Hace que la imagen se adapte al ancho de su contenedor */
+    height: auto;
+}
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%; /* Ajusta la altura del difuminado según tus necesidades */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #000000);
+}
+.conteventos{
+    margin-top: 8%;
+}
+.tituloeventos{
+    text-align: center;
+    color: #fff;
+}
+/* Estilo personalizado para el carrusel */
+.carrusel-personalizado {
+    max-width: 60%; /* Tamaño máximo deseado para el carrusel */
+    margin: 0 auto; /* Centra horizontalmente el carrusel */
+  }
+.contenedorponelemood{
+    text-align: center;
+}
+.imgponelemood{
+    max-width: 100%; /* Hace que la imagen se adapte al ancho de su contenedor */
+    height: auto; 
+    margin: auto;
+}
+/* Ajustes para las imágenes */
+.imgminicarrusel {
+    max-width: 100%; /* La imagen se ajustará al ancho del carrusel */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+.textoponelemood{
+    color: #fff;
+}
+.contenedorp{
+    text-align: center; /* Centra el contenido horizontalmente */
+    max-width: 800px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra la div en el centro de la pantalla */
+    padding-top: 5%;
+    padding-left: 10% ;
+    padding-right: 10%;
+}
+.cartas{
+    background-color: #000000;
+    color: #fff;
+}
+.textomood{
+    color: #fff;
+}
+.resenia{
+    padding-top: 5%;
+}
+.titform{
+    color: #fff;
+}

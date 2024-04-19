@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+*{
+    color: #fff;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.formulario {
+    width: 50%; /* Cambia el tamaño al valor que desees */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 20px; /* Espacio interno para mejor apariencia */
+    text-align: center;
+}
+.contacto{
+    width: 50%; /* Define un ancho para tu div */
+   margin: 0 auto; /* Centra horizontalmente */
+}
+.contiframe{
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh;
+}
+.mapa{
+    width: 80%; /* Ancho del iframe, puedes ajustarlo según tus necesidades */
+  height: 80vh; /* Altura del iframe, puedes ajustarlo según tus necesidades */
+}
+.labelinput{
+    color: #000;
+}
+.btnform{
+    margin: 10px;
+}

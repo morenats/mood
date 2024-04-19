@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+.fondo {
+    background-color: #000
+}
+
+/* titulo */
+.titulogaleria {
+    color: #fff;
+    text-align: center;
+    padding: 8%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* estilo para las imagenes de las cartas */
+.imagen {
+    transition: transform 1.5s;
+}
+
+.imagen:hover {
+    transform: rotateY(360deg);
+}
+
+/* estilo cards */
+
+.titulocards {
+    text-align: center;
+    color: #fff;
+    padding: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.titulocard {
+    padding: 10px;
+}
+
+.botoncard {
+    margin: 20px;
+}
+
+/* estilo filtros */
+/* Agrega este CSS a tu hoja de estilos */
+.titulocalendario {
+    color: #fff;
+}
+
+.imgcalendario {
+    width: 50%;
+    /* Cambia el tamaño según tus necesidades */
+    height: auto;
+}
+
+.imgcalendario:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,80 @@
+<h1 class="titulogaleria">NUESTRA AGENDA</h1>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 calendario calendario">
+      <h2 class="titulocalendario">SEPTIEMBRE</h2>
+      <img src="./assets/calendario.png" class="imgcalendario" alt="" (click)="mostrars=!mostrars; mostraro=false; mostrarn=false">
+    </div>
+    <div class="col-xs-12 col-sm-4 calendario calendario">
+      <h2 class="titulocalendario">OCTUBRE</h2>
+      <img src="./assets/calendario.png" class="imgcalendario" alt="" (click)="mostraro=!mostraro; mostrarn=false; mostrars=false ">
+    </div>
+    <div class="col-xs-12 col-sm-4 calendario calendario">
+      <h2 class="titulocalendario">NOVIEMBRE</h2>
+      <img src="./assets/calendario.png" class="imgcalendario" alt=""  (click)="mostrarn=!mostrarn; mostraro=false; mostrars=false">
+    </div>
+  </div>
+</div>
+
+<h1 *ngIf="mostrars" class="titulocards">SEPTIEMBRE</h1>
+<div class="container overflow-hidden text-center" *ngIf="mostrars">
+  <div class="row gy-5">
+    <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let cardseptiembre of cardsseptiembre">
+      <div class="card mb-3 fondo" >
+        <div class="card-header titulocard">{{titulos[cardseptiembre-1]}}</div>
+        <div class="card-body">
+          <img src="./assets/septiembre{{cardseptiembre}}.jpg" class="card-img-top w-100 imagen" alt="...">
+          <div *ngIf="estados[cardseptiembre-1]" class="iconos">
+            <span><i class="bi bi-calendar"></i> {{fechas[cardseptiembre-1]}}</span>
+            <span><i class="bi bi-clock"></i> {{hora[cardseptiembre-1]}}</span>
+            <span><i class="bi bi-pin-map"></i> {{lugarsyo[cardseptiembre-1]}}</span>
+          </div>
+          <button type="button" class="btn btn-outline-light botoncard" (click)="estados[cardseptiembre-1]=!estados[cardseptiembre-1];valoress[cardseptiembre-1]==0 ? valoress[cardseptiembre-1]=1 : valoress[cardseptiembre-1]=0">{{info[valoress[cardseptiembre-1]]}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1 *ngIf="mostraro" class="titulocards">OCTUBRE</h1>
+<div class="container overflow-hidden text-center" *ngIf="mostraro">
+  <div class="row gy-5 carta">
+    <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let cardoctubre of cardsoctubre">
+      <div class="card mb-3 fondo" style="max-width: 18rem;">
+        <div class="card-header titulocard">{{tituloo[cardoctubre-1]}}</div>
+        <div class="card-body">
+          <div class="imagen-container">
+          <img src="./assets/octubre{{cardoctubre}}.jpg" class="card-img-top imagen" alt="...">
+          </div>
+          <div *ngIf="estadoo[cardoctubre-1]" class="iconos">
+            <span><i class="bi bi-calendar"></i> {{fechao[cardoctubre-1]}}</span>
+            <span><i class="bi bi-clock"></i> {{hora[cardoctubre-1]}}</span>
+            <span><i class="bi bi-pin-map"></i> {{lugarsyo[cardoctubre-1]}}</span>
+          </div>
+          <button type="button" class="btn btn-outline-light botoncard" (click)="estadoo[cardoctubre-1]=!estadoo[cardoctubre-1]; valoreso[cardoctubre-1]==0 ? valoreso[cardoctubre-1]=1 : valoreso[cardoctubre-1]=0">{{info[valoreso[cardoctubre-1]]}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1 *ngIf="mostrarn" class="titulocards">NOVIEMBRE</h1>
+<div class="container overflow-hidden text-center" *ngIf="mostrarn">
+  <div class="row gy-5 carta">
+    <div class="col-lg-4 col-md-6 col-sm-12 " *ngFor="let cardnoviembre of cardsnoviembre">
+      <div class="card mb-3 fondo" style="max-width: 18rem;">
+        <div class="card-header titulocard">{{titulon[cardnoviembre-1]}}</div>
+        <div class="card-body">
+          <img src="./assets/noviembre{{cardnoviembre}}.jpg" class="card-img-top imagen" alt="...">
+          <div *ngIf="estadon[cardnoviembre-1]" class="iconos">
+            <span><i class="bi bi-calendar"></i> {{fechan[cardnoviembre-1]}}</span>
+            <span><i class="bi bi-clock"></i> {{hora[cardnoviembre-1]}}</span>
+            <span><i class="bi bi-pin-map"></i> {{lugarn[cardnoviembre-1]}}</span>
+          </div>
+          <button type="button" class="btn btn-outline-light botoncard" (click)="estadon[cardnoviembre-1]=!estadon[cardnoviembre-1]; valoresn[cardnoviembre-1]==0 ? valoresn[cardnoviembre-1]=1 : valoresn[cardnoviembre-1]=0">{{info[valoresn[cardnoviembre-1]]}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

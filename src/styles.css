@@ -1,0 +1,17 @@
+body{
+    background-color: #000000;
+}
+.menu{
+    padding: 0%;
+    margin-bottom: 12%;
+    height: 80px;
+    background-color: #fff;
+}
+.contenedor{
+    margin-top: 80px;
+}
+.iconos span{
+    text-align: start;
+    display: block;
+    margin-bottom: 10px;
+}

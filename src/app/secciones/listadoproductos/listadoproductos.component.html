@@ -1,0 +1,49 @@
+<h1 class="titulolista">LISTADO DE NUESTROS EVENTOS</h1>
+
+<div class="container text-center">
+    <div class="row contenedorlista" *ngFor="let listas of listass">
+        <div class="col">
+            <img src="./assets/septiembre{{listas}}.jpg" class="card-img-top imagen" alt="...">
+        </div>
+        <div class="col iconos">
+            <span><i class="bi bi-calendar"></i> {{fechas[listas-1]}}</span>
+            <span><i class="bi bi-clock"></i> {{hora[listas-1]}}</span>
+            <span><i class="bi bi-pin-map"></i> {{lugarsyo[listas-1]}}</span>
+        </div>
+        <div class="col">
+            <div class="contenedor-boton">
+                <a class="btn btn-outline-light botonlist" href="https://fivepro.tuentrada.com/list/events" role="button">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <div class="row contenedorlista" *ngFor="let listao of listaso">
+        <div class="col ">
+            <img src="./assets/octubre{{listao}}.jpg" class="card-img-top imagen" alt="...">
+        </div>
+        <div class="col iconos">
+            <span><i class="bi bi-calendar"></i> {{fechao[listao-1]}}</span>
+            <span><i class="bi bi-clock"></i> {{hora[listao-1]}}</span>
+            <span><i class="bi bi-pin-map"></i> {{lugarsyo[listao-1]}}</span>
+        </div>
+        <div class="col">
+            <div class="contenedor-boton">
+                <a class="btn btn-outline-light botonlist" href="https://fivepro.tuentrada.com/list/events" role="button">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <div class="row contenedorlista" *ngFor="let listan of listasn">
+        <div class="col">
+            <img src="./assets/noviembre{{listan}}.jpg" class="card-img-top imagen" alt="...">
+        </div>
+        <div class="col iconos">
+            <span><i class="bi bi-calendar"></i> {{fechan[listan-1]}}</span>
+            <span><i class="bi bi-clock"></i> {{hora[listan-1]}}</span>
+            <span><i class="bi bi-pin-map"></i> {{lugarn[listan-1]}}</span>
+        </div>
+        <div class="col">
+            <div class="contenedor-boton">
+                <a class="btn btn-outline-light botonlist" href="https://fivepro.tuentrada.com/list/events" role="button">Comprar</a>
+            </div>
+        </div>
+    </div>
+</div>

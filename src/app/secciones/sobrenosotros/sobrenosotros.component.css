@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+*{
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contenedortitulo{
+    text-align: center;
+    padding: 5%;
+}
+.cuadro{
+    border: #fff solid 2px;
+    padding: 10px;
+}
+.texto{
+    font-family: sans-serif;
+}
+.video{
+    width: 100%;
+    height: auto;
+}
